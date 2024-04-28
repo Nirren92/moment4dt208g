@@ -1,0 +1,43 @@
+
+table
+{
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 150px;
+    
+}
+
+th
+{
+    background-color: rgb(167, 106, 27);
+    font-size: 2vw;
+    border: 1px solid #919191;
+    cursor: pointer;
+}
+
+th:hover
+{
+    background-color: #919191;
+}
+
+td
+{
+   
+    border: 1px solid #919191;
+}
+
+tr
+{
+    font-size: 2vw;
+}
+
+tr:nth-child(even)
+{
+
+    background-color: #fcf9f9
+}
+
+tr:hover
+{
+    background-color: #949494
+}
