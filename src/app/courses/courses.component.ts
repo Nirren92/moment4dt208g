@@ -17,13 +17,12 @@ export class CoursesComponent {
   courselist: Course[] = [];
   courselist_orginal:Course[] = [];
   inputform: FormGroup;
+
   constructor(private kurserService: KurserService,private formBuilder: FormBuilder,) {
     
   this.inputform = this.formBuilder.group({
     sokord: ''
     });
-
-
    }
 
   ngOnInit() {
