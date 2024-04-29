@@ -1,31 +1,35 @@
-<p>courses works!</p>
+<div class="container">
 
-<h2>Medlemmar</h2>
 
-<form [formGroup]="inputform" (ngSubmit)="filtersokord()" style="margin-top: 50px; width: 90%;">                        
-    <label for="sokord"><span>Sökord</span>
-      <input type="text" formControlName="sokord" id="sokord">
-    </label>
-    <button class="button" type="submit">Sök</button>
-  </form>
-  
-<div>
-    <table >
+
+    <h1>Kurser för datateknik</h1>
+
+    <form [formGroup]="inputform" style="margin-top: 50px; width: 90%;">                        
+        <label for="sokord"><span>Sökord</span>
+        <input (input)="filtersokord()" type="text" formControlName="sokord" id="sokord">
+        </label>
         
-        <tr>
-            <th (click)="sort_code()" >Kurskod</th>
-            <th (click)="sort_coursename()" >Namn</th>
-            <th (click)="sort_progression()" >Progression</th>
-        </tr>
-        <tbody id="kurslista">
-            <tr *ngFor="let course of courselist">
-                <td>{{ course.code }}</td>
-                <td> <a href="{{ course.syllabus }}"> {{ course.coursename }}</a></td>
-                <td>{{ course.progression }}</td>
-  
+    </form>
+    
+    <div>
+        <table >
+            
+            <tr>
+                <th (click)="sort_code()" >Kurskod</th>
+                <th (click)="sort_coursename()" >Namn</th>
+                <th (click)="sort_progression()" >Progression</th>
             </tr>
-        </tbody>
+            <tbody id="kurslista">
+                <tr *ngFor="let course of courselist">
+                    <td>{{ course.code }}</td>
+                    <td> <a href="{{ course.syllabus }}"> {{ course.coursename }}</a></td>
+                    <td>{{ course.progression }}</td>
+    
+                </tr>
+            </tbody>
 
 
-    </table>
+        </table>
+    </div>
+
 </div>
