@@ -1,6 +1,7 @@
 # Moment4dt208g
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
+detta projekt hämtar data via ett fetch kommando i angular. användaren kan söka på kurser samt sortera. 
 
 ## Development server
 
