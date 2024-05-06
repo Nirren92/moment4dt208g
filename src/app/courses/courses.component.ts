@@ -24,7 +24,7 @@ export class CoursesComponent {
     sokord: ''
     });
    }
-
+     
   ngOnInit() {
       this.kurserService.getCourses().subscribe((data) => {
       this.courselist = data;
